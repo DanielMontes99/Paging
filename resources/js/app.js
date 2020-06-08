@@ -4,6 +4,7 @@ const app = {
         'logi' : '/RepoPaging/app/app.php',
         'logout' : '/RepoPaging/app/app.php?logout',
         'profile' : '/RepoPaging/resources/views/profile.php',
+        'post' : '/RepoPaging/app/app.php',
     },
 
     view : function(route){
