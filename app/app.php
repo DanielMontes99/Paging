@@ -6,6 +6,7 @@ require_once "autoload.php";
 
 use Controllers\auth\LoginController as LoginController;
 use Controllers\PostsController as PostsController;
+use Controllers\LibrosController as LibrosController;
 
 $login = in_array('login', array_keys($_POST));
 
@@ -29,7 +30,7 @@ if($logout) {
     $userLogout = new LoginController();
     $userLogout->userLogout();
 
-    header('Location: /PI/resources/views/home.php');
+    header('Location: /RepoPaging/resources/views/home.php');
 }
 
 $pp = in_array('pp', array_keys($_GET));
@@ -47,4 +48,25 @@ if($mp) {
     $mposts = new PostsController();
 
     print_r($mposts->myPosts($id));
+}
+
+// CARGAR LIBROS
+$gl = in_array('gl', array_keys($_GET));
+
+if($gl) {
+    $glibros = new LibrosController();
+
+    print_r($glibros->getLibros());
+}
+
+//POST
+
+$post = in_array('post', array_keys($_POST));
+
+if($post) {
+    $datos = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+    $pos = new PostsController();
+
+    print_r($pos->postPost($datos));
+
 }

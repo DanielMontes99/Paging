@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Models\post;
+use Models\libro;
 
 class PostsController {
     public function __construct(){
@@ -27,6 +28,24 @@ class PostsController {
                        ->where([['userId',$id]])
                        ->orderBy([['fecha','DESC']])
                        ->get();
+        
+        return $result;
+    }
+
+    public function postPost($datos) {
+        $pos = new post();
+        $libro = new libro();
+
+        $nLibro = $libro->select(['titulo'])
+                        ->where([['ISBN',$datos['isbn']]])
+                        ->get();
+
+        $titulo = json_decode($nLibro,true);
+        $lol = $titulo["0"];
+        
+        $result = $pos->into([['userId'],['isbn'],['titulo'],['stars'],['spoiler'],['review']])
+                      ->values([[$datos['userId']],[$datos['isbn']],[$lol["titulo"]],[$datos['stars']],[$datos['spoiler']],[$datos['review']]])
+                      ->insert();
         
         return $result;
     }

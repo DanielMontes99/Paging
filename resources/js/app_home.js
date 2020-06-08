@@ -3,6 +3,7 @@ const app_home = {
     url : "/RepoPaging/app/app.php",
 
     pp : $("#previous-posts"),
+    gl : $("#libro"),
 
     previousPosts : function() {
         var html = "";
@@ -10,7 +11,6 @@ const app_home = {
         fetch(this.url + "?pp")
             .then( response => response.json())
             .then( ppresp => {
-                console.table(ppresp);
                 for( let post of ppresp){
                     if (post.stars == 4){
                         html += `
@@ -163,6 +163,20 @@ const app_home = {
                 }
                 this.pp.html(html);
             }).catch( err => console.log( err ));
-            return ppresp;
+    },
+
+    getLibros : function() {
+        var html = "";
+        this.gl.html("");
+        fetch(this.url + "?gl")
+            .then( response => response.json() )
+            .then( glresp => {
+                for(let libro of glresp){
+                    html += `
+                        <option value="${ libro.ISBN }">${ libro.titulo }</option>
+                    `;
+                }
+                this.gl.html(html);
+            }).catch( err => console.log( err ));
     }
 }
