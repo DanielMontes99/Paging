@@ -93,7 +93,7 @@ function scripts() {
 
 } 
 
-function footer($banner = "Paging") {
+function footer($banner = "") {
 
 ?>
 </div> <!-- Se cierra el div que pone el fondo a la página-->
