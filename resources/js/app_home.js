@@ -27,7 +27,7 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="text-secondary" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
+                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
                                             <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="text-secondary" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
+                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
                                             <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="text-secondary" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
+                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
                                             <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="text-secondary" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
+                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
                                             <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="text-secondary" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
+                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
                                             <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
                                         </div>
                                     </div>
@@ -173,6 +173,7 @@ const app_home = {
             .then( glresp => {
                 for(let libro of glresp){
                     html += `
+                        <option value="" selected disabled hidden>Selecciona un libro</option>
                         <option value="${ libro.ISBN }">${ libro.titulo }</option>
                     `;
                 }

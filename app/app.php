@@ -68,5 +68,7 @@ if($post) {
     $pos = new PostsController();
 
     print_r($pos->postPost($datos));
+    
+    header("Location: /RepoPaging/resources/views/home.php");
 
 }

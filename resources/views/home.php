@@ -13,70 +13,72 @@ $ua = new LoginController;
 head($ua);
 
 ?>
-
     
-
 <div class="container pt-5">
-
+    
     <div class="section">
         <div class="row">
             <div class="col">
         
             </div>
-            <div class="container col-6">
-                
-                <div class="card">
-                    <div class="card-body">
-                        <form class="form" id="postform" method="POST" action="">
-                        
-                            <div class="form-group">
-                                <label for="libro" class="bmd-label-floating">Título del libro</label>
-                                <select id="libro" name="libro" class="form-control">
-                                    
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="stars" class="bmd-label-floating">Calificación</label>
-                                <select id="stars" name="stars" class="form-control">
-                                    <option value="1">1 Estrella</option>
-                                    <option value="2">2 Estrellas</option>
-                                    <option value="3">3 Estrellas</option>
-                                    <option value="4">4 Estrellas</option>
-                                    <option value="5">5 Estrellas</option>
-                                </select>
-                            </div>
+            <div class="col-8" >
+                <div class="container ">
 
-                            <div class="form-group">
-                                <label for="review" class="bmd-label-floating">Escribe tu reseña</label>
-                                <textarea type="text" class="form-control" rows="3" id="review"></textarea>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form" id="postform" method="POST" action="">
                             
-                            <div class="row form-group">
-                                <div class="togglebutton">
-                                    <label>
-                                        <input id="spoiler" name="spoiler" value="1" type="checkbox">
-                                        <span class="toggle"></span>
-                                        Spoiler
-                                    </label>
+                                <div class="form-group">
+                                    <label for="libro" class="bmd-label-floating">Título del libro</label>
+                                    <select id="libro" name="libro" class="form-control">
+                                        
+                                    </select>
                                 </div>
-                                <div class="col-md-4 ml-auto mr-2 text-center">
-                                <button class="btn btn-primary btn-raised" type="submit">
-                                    Publicar
-                                </button>
+                                
+                                <div class="form-group">
+                                    <label for="stars" class="bmd-label-floating">Calificación</label>
+                                    <select id="stars" name="stars" class="form-control">
+                                        <option value="" selected disabled hidden>Selecciona la calificación</option>
+                                        <option value="1">1 Estrella</option>
+                                        <option value="2">2 Estrellas</option>
+                                        <option value="3">3 Estrellas</option>
+                                        <option value="4">4 Estrellas</option>
+                                        <option value="5">5 Estrellas</option>
+                                    </select>
                                 </div>
-                            </div>
 
-                        </form>
+                                <div class="form-group">
+                                    <label for="review" class="bmd-label-floating">Escribe tu reseña</label>
+                                    <textarea type="text" class="form-control" rows="2" id="review"></textarea>
+                                </div>
+                                
+                                <div class="row form-group">
+                                    <div class="togglebutton">
+                                        <label>
+                                            <input id="spoiler" name="spoiler" value="1" type="checkbox">
+                                            <span class="toggle"></span>
+                                            Spoiler
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4 ml-auto mr-2 text-center">
+                                        <button class="btn btn-primary btn-raised" onclick="app.view('inicio')" type="submit">
+                                            Publicar
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
-                </div>
 
                 <br>
 
-                <div id="previous-posts">
-                
                 </div>
-                <!-- Se llena con javascript, posts generales -->
+
+                <div id="previous-posts">
+                    <!-- Se llena con javascript, posts generales -->
+                </div>
+                
             </div>
             <div class="col">
 
@@ -91,12 +93,13 @@ head($ua);
     $(document).ready(function(){
         app_home.previousPosts();
         app_home.getLibros();
+        
         const publicacion = $("#postform");
 
         publicacion.submit(function(e){
             e.preventDefault();
             e.stopPropagation();
-
+    
             const datos = new FormData();
             datos.append("userId", <?=$ua->id?>);
             datos.append("isbn", $("#libro").val());
