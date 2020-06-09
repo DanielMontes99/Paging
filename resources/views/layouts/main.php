@@ -18,8 +18,9 @@ function head($ua = null) {
     <nav class="navbar fixed-top navbar-expand-lg bg-primary" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="/RepoPaging">
-                Paging</a>
+                <a class="navbar-brand" href="#" onclick="app.view('inicio')">
+                    <img src="/RepoPaging/resources/img/logo_grande.png" alt="logo" class="" style="height:36px; width:120px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle</span>
                     <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@ function head($ua = null) {
                 <ul class="navbar-nav ml-auto">
                     <?php if(!is_null($ua) && $ua->sv){ ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="app.view('inicio')">
                             <i class="material-icons">home</i> Inicio
                         </a>
                     </li>
@@ -63,7 +64,6 @@ function head($ua = null) {
         </div>
     </nav>
 
-    <div class="page-header" data-parallax="true" >
 <?php
 }
 function scripts() {
