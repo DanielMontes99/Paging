@@ -6,43 +6,9 @@
 
 ?>
 
-<!--<div class="container">
-    <div class="row">
-        <div class="card mt-5 w-50 col-6 col-md-4">
-            <div class="card-body">
-                <form action="" id="registerform">
-                    <h3> <i class="fas fa-user"></i> Registrarse</h3>
-                    <div class="grupo">
-                        <input type="email" name="email" id="email" class="datos" required><span class="barra"></span>
-                        <label for="email">Correo Electrónico</label>
-                    </div>
-                    <div class="grupo">
-                        <input type="text" name="username" id="username" class="datos" required><span class="barra"></span>
-                        <label for="username">Nombre de usuario</label>                  
-                    </div>
-                    <div class="grupo">
-                        <input type="password" name="passwd" id="passwd" class="datos" required><span class="barra"></span>
-                        <label for="passwd">Contraseña</label>             
-                    </div>
-                    <div class="grupo">
-                        <input type="password" name="passwd1" id="passwd1" class="datos" required><span class="barra"></span>
-                        <label for="passwd1">Repetir contraseña</label>   
-                    </div>
-                    <small id="error" class="form-text text-danger d-none mb-2">Las constraseñas no coinciden.</small>
-                    <small id="error1" class="form-text text-danger d-none mb-2">El correo o nombre de usuario que ingresaste ya exite.</small>
-                    
-                    <button class="boton" type="submit">Registrarse</button>
-                    <p class="text-right">¿Yo tienes una cuenta? <a href="login.php">Inicia Sesión</a></p>
-                    
-                </form>
-            </div>
-        </div>
-        <div class="col-12 col-md-8">
-            <a href="/RepoPaging/index.php"><img class="avatar" src="/RepoPaging/resources/img/logo_grande.png" alt="logo de pagging"></a>
-        </div>
-    </div>
-</div>-->
+<br>
 <div class="container">
+<div class="section">
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login card-register">

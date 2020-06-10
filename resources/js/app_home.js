@@ -27,13 +27,13 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
-                                            <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
+                                            <p class="d-inline" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></p>
+                                            <p class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</p>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <p>${ post.review }</p>
-                                        <button class="btn btn-primary btn-round">Comentar</button>
+                                        
                                         <button class="btn btn-primary btn-fab btn-round float-right" >
                                             <i class="material-icons">favorite</i>
                                         </button>
@@ -56,13 +56,13 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
-                                            <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
+                                            <p class="d-inline" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></p>
+                                            <p class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</p>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <p>${ post.review }</p>
-                                        <button class="btn btn-primary btn-round">Comentar</button>
+                                        
                                         <button class="btn btn-primary btn-fab btn-round float-right" >
                                             <i class="material-icons">favorite</i>
                                         </button>
@@ -85,13 +85,13 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
-                                            <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
+                                            <p class="d-inline" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></p>
+                                            <p class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</p>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <p>${ post.review }</p>
-                                        <button class="btn btn-primary btn-round">Comentar</button>
+                                        
                                         <button class="btn btn-primary btn-fab btn-round float-right" >
                                             <i class="material-icons">favorite</i>
                                         </button>
@@ -114,13 +114,13 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
-                                            <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
+                                            <p class="d-inline" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></p>
+                                            <p class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</p>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <p>${ post.review }</p>
-                                        <button class="btn btn-primary btn-round">Comentar</button>
+                                        
                                         <button class="btn btn-primary btn-fab btn-round float-right" >
                                             <i class="material-icons">favorite</i>
                                         </button>
@@ -143,13 +143,13 @@ const app_home = {
                                             </div>
 
                                             <h4 class="card-title">${ post.titulo}</h4>
-                                            <small class="" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></small>
-                                            <small class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</small>
+                                            <p class="d-inline" ><i class="fas fa-user"></i> <b>${ post.user_Alias }</b></p>
+                                            <p class="float-right"><i class="fa fa-calendar"></i> ${ post.fecha }</p>
                                         </div>
                                     </div>
                                     <div class="card-body">
                                         <p>${ post.review }</p>
-                                        <button class="btn btn-primary btn-round">Comentar</button>
+                                        
                                         <button class="btn btn-primary btn-fab btn-round float-right" >
                                             <i class="material-icons">favorite</i>
                                         </button>

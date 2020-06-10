@@ -15,29 +15,31 @@ is_null($ua->sessionValidate()) ? header("Location: /RepoPaging/resources/views/
 head($ua);
 
 ?>
-
-<div class="container pt-5">
-    <div class="card">
-        <div class="card-header">
-            <h4 class="card-title">Mis publicaciones</h4>    
+<br>
+<div class="container">
+    <div class="section pt-5">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Mis publicaciones</h4>    
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="my-posts">
+                        <!-- Se llena con javascript -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="card-body">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Título</th>
-                        <th>Fecha</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="my-posts">
-                    <!-- Se llena con javascript -->
-                </tbody>
-            </table>
-        </div>
+        
+        
     </div>
-    
-    
 </div>
 
 <?php scripts(); ?>

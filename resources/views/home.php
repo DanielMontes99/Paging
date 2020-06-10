@@ -22,8 +22,9 @@ head($ua);
         
             </div>
             <div class="col-8" >
+           
                 <div class="container ">
-
+                <?php if(!is_null($ua) && $ua->sv){ ?>
                     <div class="card">
                         <div class="card-body">
                             <form class="form" id="postform" method="POST" action="">
@@ -61,7 +62,7 @@ head($ua);
                                         </label>
                                     </div>
                                     <div class="col-md-4 ml-auto mr-2 text-center">
-                                        <button class="btn btn-primary btn-raised" onclick="app.view('inicio')" type="submit">
+                                        <button class="btn btn-primary btn-round" onclick="app.view('inicio')" type="submit">
                                             Publicar
                                         </button>
                                     </div>
@@ -70,7 +71,7 @@ head($ua);
                             </form>
                         </div>
                     </div>
-
+                <?php } ?>
                 <br>
 
                 </div>
