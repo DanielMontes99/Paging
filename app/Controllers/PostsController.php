@@ -4,6 +4,7 @@ namespace Controllers;
 
 use Models\post;
 use Models\libro;
+use Models\post_reactions;
 
 class PostsController {
     public function __construct(){
@@ -47,6 +48,16 @@ class PostsController {
                       ->values([[$datos['userId']],[$datos['isbn']],[$lol["titulo"]],[$datos['stars']],[$datos['spoiler']],[$datos['review']]])
                       ->insert();
         
+        return $result;
+    }
+
+    public function likePost($pid) {
+        $lpost = new post_reactions();
+
+        $result = $lpost->into([['post_id'],['user_id']])
+                        ->values([[$pid],[15]])
+                        ->insert();
+
         return $result;
     }
 }

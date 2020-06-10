@@ -34,7 +34,7 @@ const app_home = {
                                     <div class="card-body">
                                         <p>${ post.review }</p>
                                         
-                                        <button class="btn btn-primary btn-fab btn-round float-right" >
+                                        <button class="btn btn-primary btn-fab btn-round float-right" onclick="app_likes.likePost(${ post.idPost })" type="button">
                                             <i class="material-icons">favorite</i>
                                         </button>
                                     </div>
@@ -63,7 +63,7 @@ const app_home = {
                                     <div class="card-body">
                                         <p>${ post.review }</p>
                                         
-                                        <button class="btn btn-primary btn-fab btn-round float-right" >
+                                        <button class="btn btn-primary btn-fab btn-round float-right" onclick="app_likes.likePost(${ post.idPost })" type="button">
                                             <i class="material-icons">favorite</i>
                                         </button>
                                     </div>
@@ -92,7 +92,7 @@ const app_home = {
                                     <div class="card-body">
                                         <p>${ post.review }</p>
                                         
-                                        <button class="btn btn-primary btn-fab btn-round float-right" >
+                                        <button class="btn btn-primary btn-fab btn-round float-right" onclick="app_likes.likePost(${ post.idPost })" type="button">
                                             <i class="material-icons">favorite</i>
                                         </button>
                                     </div>
@@ -121,7 +121,7 @@ const app_home = {
                                     <div class="card-body">
                                         <p>${ post.review }</p>
                                         
-                                        <button class="btn btn-primary btn-fab btn-round float-right" >
+                                        <button class="btn btn-primary btn-fab btn-round float-right" onclick="app_likes.likePost(${ post.idPost })" type="button">
                                             <i class="material-icons">favorite</i>
                                         </button>
                                     </div>
@@ -150,7 +150,7 @@ const app_home = {
                                     <div class="card-body">
                                         <p>${ post.review }</p>
                                         
-                                        <button class="btn btn-primary btn-fab btn-round float-right" >
+                                        <button class="btn btn-primary btn-fab btn-round float-right" onclick="app_likes.likePost(${ post.idPost })" type="button">
                                             <i class="material-icons">favorite</i>
                                         </button>
                                     </div>

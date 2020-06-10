@@ -72,3 +72,12 @@ if($post) {
     header("Location: /RepoPaging/resources/views/home.php");
 
 }
+
+$likes = in_array('like', array_keys($_POST));
+
+if($likes) {
+    $pid = filter_input(INPUT_POST,'pid');
+    $lk = new PostsController();
+
+    print_r($lk->likePost($pid));
+}

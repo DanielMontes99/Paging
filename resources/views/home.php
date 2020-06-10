@@ -90,6 +90,7 @@ head($ua);
 
 <?php scripts(); ?>
 <script src="/RepoPaging/resources/js/app_home.js"></script>
+<script src="/RepoPaging/resources/js/app_likes.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         app_home.previousPosts();
